@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="1431.0" styleClass="bodybg" stylesheets="@Background/Background3.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mp.SignUpController">
+   <children>
+      <Label layoutX="705.0" layoutY="119.0" text="Sign Up" textAlignment="CENTER" textFill="#df9432">
+         <font>
+            <Font name="Century" size="37.0" />
+         </font>
+      </Label>
+      <VBox layoutX="495.0" layoutY="203.0" prefHeight="341.0" prefWidth="558.0">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="558.0" style="-fx-background-color: black; -fx-background-radius: 20;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=" Username :" wrappingWidth="200.7362060546875">
+                     <font>
+                        <Font name="Century Gothic" size="26.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="username" prefHeight="18.0" prefWidth="252.0" />
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="557.0" style="-fx-background-color: black; -fx-background-radius: 20;" translateY="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" translateX="14.0" translateY="1.0" wrappingWidth="200.7362060546875">
+                     <font>
+                        <Font name="Century Gothic" size="26.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="Fname" prefHeight="22.0" prefWidth="252.0" translateY="5.0" />
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="556.0" style="-fx-background-color: black; -fx-background-radius: 20;" translateY="26.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" translateX="14.0" translateY="1.0" wrappingWidth="197.53619384765625">
+                     <font>
+                        <Font name="Century Gothic" size="26.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="Lname" prefHeight="22.0" prefWidth="252.0" style="-fx-background-radius: 5;" translateX="4.0" translateY="5.0" />
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="558.0" style="-fx-background-color: black; -fx-background-radius: 20;" translateY="38.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Password  :" translateX="14.0" translateY="5.0" wrappingWidth="199.13623046875">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="CreatePassword" prefHeight="26.0" prefWidth="258.0" style="-fx-background-radius: 0;" />
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="557.0" style="-fx-background-color: black; -fx-background-radius: 20;" translateY="47.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password :" translateX="14.0" translateY="5.0" wrappingWidth="203.13623046875">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="confirmP" prefHeight="27.0" prefWidth="256.0" translateY="6.0" />
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="557.0" style="-fx-background-color: black; -fx-background-radius: 20;" translateY="56.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Email             :" translateX="14.0" translateY="5.0" wrappingWidth="204.73623657226562">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="email" prefHeight="26.0" prefWidth="257.0" translateX="-2.0" translateY="5.0" />
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="558.0" style="-fx-background-color: black; -fx-background-radius: 20;" translateY="64.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone no.    : " translateX="14.0" translateY="5.0" wrappingWidth="207.13623046875">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="phone" prefHeight="22.0" prefWidth="252.0" translateX="-2.0" translateY="5.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="495.0" layoutY="159.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="38.0" prefWidth="59.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="475.0" layoutY="-31.0" prefHeight="156.0" prefWidth="600.0" text="Educator" textOverrun="CLIP">
+         <font>
+            <Font name="Ink Free" size="96.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6515151533213528">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.45098039507865906" green="0.23529411852359772" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="873.0" layoutY="554.0" mnemonicParsing="false" onAction="#onSignUpButtonClick" prefHeight="47.0" prefWidth="90.0" style="-fx-background-color: Black; -fx-background-radius: 30;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorName" layoutX="1083.0" layoutY="269.0" prefHeight="18.0" prefWidth="126.0" />
+      <Label fx:id="errorLname" layoutX="1088.0" layoutY="319.0" prefHeight="18.0" prefWidth="103.0" />
+      <Label fx:id="errorPassword" layoutX="1088.0" layoutY="365.0" prefHeight="18.0" prefWidth="126.0" />
+      <Label fx:id="errorUsername" layoutX="1088.0" layoutY="214.0" prefHeight="18.0" prefWidth="115.0" />
+      <Label fx:id="errorEmail" layoutX="1088.0" layoutY="462.0" prefHeight="18.0" prefWidth="115.0" />
+      <Label fx:id="errorPhoneNo" layoutX="1088.0" layoutY="509.0" prefHeight="18.0" prefWidth="90.0" />
+      <Button layoutX="588.0" layoutY="554.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="47.0" prefWidth="79.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

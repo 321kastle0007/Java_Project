@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="1431.0" style="-fx-background-color: #a8c9ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mp.Page4Controller">
+   <children>
+      <Label fx:id="ExperimentOne" alignment="CENTER" layoutY="14.0" prefHeight="34.0" prefWidth="1431.0" text="Experiment No.1">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9686274528503418" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.009421265141318967">
+                     <color>
+                        <Color red="1.0" green="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.45098039507865906" green="0.23529411852359772" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="errorOrder" layoutX="648.0" layoutY="194.0" />
+      <Label fx:id="errorDistance" layoutX="723.0" layoutY="315.0" />
+      <Label fx:id="errorLength" layoutX="467.0" layoutY="296.0" />
+      <Label fx:id="Topic" alignment="CENTER" contentDisplay="CENTER" layoutY="65.0" prefHeight="30.0" prefWidth="1431.0" text=" Determination of wavelength using Diffraction grating. (Laser source)" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="288.0" layoutY="415.0" prefHeight="181.0" prefWidth="856.0">
+        <columns>
+          <TableColumn fx:id="ObsNo" prefWidth="75.0" text="Obs No" />
+          <TableColumn fx:id="Len" prefWidth="75.0" text="L (in cm)" />
+            <TableColumn fx:id="Orde" prefWidth="104.00001525878906" text="Order No." />
+            <TableColumn fx:id="Double" prefWidth="101.5999755859375" text="2X (in cm)" />
+            <TableColumn fx:id="Half" prefWidth="104.7999267578125" text="X (in cm)" />
+            <TableColumn fx:id="Theta" prefWidth="138.4000244140625" text="θ = tan−1(X/D )" />
+            <TableColumn fx:id="Sined" prefWidth="129.60009765625" text="sin θ" />
+            <TableColumn fx:id="Waveleng" prefWidth="128.7999267578125" text="λ=d.sin θ/n" />
+        </columns>
+      </TableView>
+      <BorderPane fx:id="BorderPaneOne" layoutX="198.0" layoutY="96.0" prefHeight="246.0" prefWidth="404.0" style="-fx-background-color: black;">
+         <center>
+            <ImageView fitHeight="238.0" fitWidth="396.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@icons/WhatsApp%20Image%202022-10-05%20at%2018.39.50.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="BorderpaneTwo" layoutX="756.0" layoutY="91.0" prefHeight="246.0" prefWidth="426.0" style="-fx-background-color: black;">
+         <center>
+            <ImageView fitHeight="232.0" fitWidth="465.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@icons/WhatsApp%20Image%202022-10-05%20at%2018.39.24.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <Button layoutX="21.0" layoutY="613.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="52.0" prefWidth="150.0" style="-fx-background-color: Black; -fx-background-radius: 30;" text="Back To Home" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="698.0" layoutY="604.0" mnemonicParsing="false" onAction="#CalculateFormula" prefHeight="61.0" prefWidth="114.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Calculate" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="198.0" layoutY="613.0" mnemonicParsing="false" onAction="#switchToExp13" prefHeight="52.0" prefWidth="82.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <HBox layoutX="280.0" layoutY="364.0" prefHeight="34.0" prefWidth="870.0">
+         <children>
+            <TextField fx:id="Length" alignment="CENTER" prefHeight="22.0" prefWidth="150.0" promptText="2X" />
+            <TextField fx:id="Order" alignment="CENTER" prefHeight="26.0" prefWidth="81.0" promptText="Order" />
+            <TextField fx:id="Distance" alignment="CENTER" promptText="Distance" />
+            <TextField fx:id="d" alignment="CENTER" promptText="Space bettween lines" />
+            <Label prefHeight="18.0" prefWidth="59.0" />
+            <TextField fx:id="Wavelength" alignment="CENTER" promptText="Answer" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="671.0" prefWidth="1431.0" styleClass="bodybg" stylesheets="@Background/Background3.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mp.HelloController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="156.0" prefWidth="1431.0" text="Educator" textOverrun="CLIP">
+         <font>
+            <Font name="Ink Free" size="96.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6515151533213528">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.4833333194255829" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5473684072494507" green="0.28770631551742554" blue="0.010136452503502369" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Text layoutX="584.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fibre Optics" textAlignment="CENTER">
+         <font>
+            <Font name="Ink Free" size="50.0" />
+         </font>
+      </Text>
+      <Button layoutX="383.0" layoutY="246.0" mnemonicParsing="false" onAction="#switchToExp11" prefHeight="58.0" prefWidth="663.0" style="-fx-background-color: black; -fx-background-radius: 30;" text=" Determination of wavelength using Diffraction grating. (Laser source)" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Back" layoutX="53.0" layoutY="48.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="58.0" prefWidth="90.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="384.0" layoutY="336.0" mnemonicParsing="false" onAction="#switchToExp21" prefHeight="58.0" prefWidth="663.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="To determine Numerical Aperture of an optical fibre." textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

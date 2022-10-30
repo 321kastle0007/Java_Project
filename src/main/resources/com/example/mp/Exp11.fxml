@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="671.0" prefWidth="1431.0" style="-fx-background-color: #a8c9ff;" styleClass="bodybg" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mp.HelloController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="-1.0" layoutY="49.0" prefHeight="34.0" prefWidth="1431.0" text="EXPERIMENT NO. 1" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.997560975609756">
+                     <color>
+                        <Color red="0.45098039507865906" green="0.23529411852359772" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.36666667461395264" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-8.0" layoutY="149.0" prefHeight="30.0" prefWidth="1438.0" text=" Determination of wavelength using Diffraction grating. (Laser source)" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="NextPage" layoutX="863.0" layoutY="597.0" mnemonicParsing="false" onAction="#switchToExp12" prefHeight="57.0" prefWidth="112.0" style="-fx-background-color: Black; -fx-background-radius: 30;" text="Next Page" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="590.0" layoutY="208.0" text="Diffraction grating, LASER source, Scale, Screen">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="466.0" layoutY="208.0" text="APPARATUS:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="257.0" text="THEORY :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back" layoutX="528.0" layoutY="597.0" mnemonicParsing="false" onAction="#switchToFibreOptics" prefHeight="58.0" prefWidth="90.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="354.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Diffraction grating is a thin film of clear glass or plastic that has a large number of linesper (mm) drawn on it. A typical grating with a poor line density is (250 lines)/mm. Using moreexpensive laser techniques, it is possible to create line densities of (3000 lines)/mm or higher.When light from a bright and small source passes through a diffraction grating, it generates a largenumber of sources. The very thin space between every two adjacent lines of the grating becomes anindependent source. These sources are coherent sources meaning that they emit in phase waveswith the same wavelength. These sources act independently such that each source sends out wavesin all directions. On a screen a distance (D) away, points can be found whose distance differencesfrom these sources are different multiples of λ causing bright fringes. One difference between theinterference of many slits (diffraction grating) and double-slit (Young’s Experiment) is that theformer makes principle maximums with smaller intensity maximums in between. The principalmaximums (Maxima) occur on both sides of the central maximum at points (or angles) for which aformula similar to Young’s holds true. If there are (N) lines per mm of the grating, then (d), thespace between every two adjacent lines or (every two adjacent sources) is;" wrappingWidth="1018.8271484375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="1431.0" style="-fx-background-color: #a8c9ff;" stylesheets="@Backgrund/Background3.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mp.HelloController">
+   <children>
+      <Label fx:id="ExperimentOne" alignment="CENTER" contentDisplay="TOP" layoutY="48.0" prefHeight="34.0" prefWidth="1431.0" text="EXPERIMENT NO. 1" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.45098039507865906" green="0.23529411852359772" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="126.0" prefHeight="30.0" prefWidth="1431.0" text=" Determination of wavelength using Diffraction grating. (Laser source)" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="NextPage" layoutX="877.0" layoutY="608.0" mnemonicParsing="false" onAction="#switchToPage4" prefHeight="60.0" prefWidth="128.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Next Page" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font></Button>
+      <Label layoutX="28.0" layoutY="197.0" text="PROCEDURE :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text layoutX="156.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1] Insert the grating in the slot provided.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="156.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2] Adjust the distance D between the screen and grating.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="157.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3] Place the LASER source on other side of grating and observe the diffraction pattern. ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="156.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4] Measure the distance between two first orders and two second orders on either sides of the zeroth order dot.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="157.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5] Tabulate all the readings and find out the wavelength of the LASER beam used.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="173.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(try to get minimum two orders on either sides of zero order).">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="Back" layoutX="539.0" layoutY="607.0" mnemonicParsing="false" onAction="#switchToExp12" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="334.0" layoutY="375.0" prefHeight="227.0" prefWidth="466.0" style="-fx-background-color: black;">
+         <center>
+            <ImageView fitHeight="218.0" fitWidth="459.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@icons/Screenshot%202022-09-30%20021326.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

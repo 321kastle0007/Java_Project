@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="671.0" prefWidth="1431.0" style="-fx-background-color: #a8c9ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mp.HelloController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutY="36.0" prefHeight="34.0" prefWidth="1464.0" text="EXPERIMENT NO. 2" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.997560975609756">
+                     <color>
+                        <Color red="0.45098039507865906" green="0.23529411852359772" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.36666667461395264" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Text layoutX="209.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For light to be propagated within the core of optical fiber as guided wave, the angle ofincidence at core-cladding interface should be greater than θ'c. As i increases, θ increases andso θ' decreases. Therefore, there is maximum value of angle of incidence beyond which, it does notpropagate rather it is refracted in to cladding medium (fig: 3(b)). This maximum value of i say im iscalled maximum angle of acceptance and n0 sin im is termed as the numerical aperture (NA).The significance of NA is that light entering in the cone of semi vertical angle im onlypropagate through the fibre. The higher the value of im or NA more is the light collected forpropagation in the fibre. Numerical aperture is thus considered as a light gathering capacity of anoptical fibre.Numerical Aperture is defined as the Sine of half of the angle of fibre’s light acceptancecone. i.e. NA= Sin θa where θa, is called acceptance cone angle" wrappingWidth="1046.0272216796875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="Back" layoutX="471.0" layoutY="598.0" mnemonicParsing="false" onAction="#switchToExp22" prefHeight="58.0" prefWidth="90.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="NextPage" layoutX="882.0" layoutY="598.0" mnemonicParsing="false" onAction="#switchToExp24" prefHeight="57.0" prefWidth="112.0" style="-fx-background-color: Black; -fx-background-radius: 30;" text="Next Page" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="19.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="481.0" layoutY="351.0" prefHeight="242.0" prefWidth="502.0" style="-fx-background-color: black;">
+         <center>
+            <ImageView fitHeight="228.0" fitWidth="582.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@icons/Exp23A.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <Label layoutX="199.0" layoutY="351.0" text="EXPERIMENTAL SETUP :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

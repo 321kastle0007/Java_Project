@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="1431.0" style="-fx-background-color: #a8c9ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mp.HelloController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="266.0" layoutY="29.0" prefHeight="34.0" prefWidth="900.0" text="EXPERIMENT NO. 1" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.45098039507865906" green="0.23529411852359772" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="98.0" prefHeight="30.0" prefWidth="1431.0" text=" Determination of wavelength using Diffraction grating. (Laser source)" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="NextPage" layoutX="869.0" layoutY="597.0" mnemonicParsing="false" onAction="#switchToExp13" prefHeight="59.0" prefWidth="113.0" style="-fx-background-color: Black; -fx-background-radius: 30;" text="Next Page" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="19.0" />
+         </font></Button>
+      <Label layoutX="456.0" layoutY="223.0" prefHeight="30.0" prefWidth="519.0" text="The diffraction grating formula for the principal maxima is;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="654.0" layoutY="270.0" text="d. sinθn = nλ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="626.0" layoutY="305.0" text="Where, n = 1,2,3,……">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="352.0" prefHeight="30.0" prefWidth="102.0" text="FORMULA:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="661.0" layoutY="352.0" prefHeight="30.0" prefWidth="178.0" text="(1) θ=tan−1 ( X/D )">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="661.0" layoutY="389.0" text="(2) d = ( a+b) = nλ/sinθ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="652.0" layoutY="428.0" text="∴ λ=d.sin θ /n">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Text layoutX="682.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d= 1/N">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="Back" layoutX="504.0" layoutY="597.0" mnemonicParsing="false" onAction="#switchToExp11" prefHeight="59.0" prefWidth="102.0" style="-fx-background-color: black; -fx-background-radius: 30;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
